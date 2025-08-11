@@ -10,8 +10,12 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/fx"
+	// _ "going-demo/doc/swagger"
 )
 
+// @title going-layout
+// @version 1.0
+// @description going的脚手架
 func main() {
 
 	ginc.R = gin.Default()
