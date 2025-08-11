@@ -1,0 +1,7 @@
+swagger:
+  dir: "./doc/swagger"
+apifox:
+  version: "2024-03-28"
+  upload_url: https://api.apifox.com/v1/projects/%s/import-openapi?locale=zh-CN
+  app_id: 6922858
+  app_key: APS-blmZxBSzo9TliE9n3bet0BErThlLzAmm

@@ -10,7 +10,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/fx"
-	// _ "going-demo/doc/swagger"
 )
 
 // @title going-layout
