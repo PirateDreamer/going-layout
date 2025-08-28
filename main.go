@@ -9,6 +9,7 @@ import (
 	"going-demo/pkg/infra/store"
 
 	"github.com/gin-gonic/gin"
+	"github.com/spf13/viper"
 	"go.uber.org/fx"
 )
 
@@ -28,8 +29,8 @@ func main() {
 		domain.Domain(),
 
 		rest.Router(),
-		// fx.Invoke(func(conf *viper.Viper) {
-		// 	ginc.R.Run()
-		// }),
+		fx.Invoke(func(conf *viper.Viper) {
+			ginc.R.Run()
+		}),
 	).Run()
 }

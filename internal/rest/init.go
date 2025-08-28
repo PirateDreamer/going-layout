@@ -12,6 +12,6 @@ func Rest() fx.Option {
 
 func Router() fx.Option {
 	return fx.Options(
-		fx.Invoke(NewUserRest),
+		fx.Invoke(UserRouter),
 	)
 }
