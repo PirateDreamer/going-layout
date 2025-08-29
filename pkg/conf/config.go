@@ -9,11 +9,17 @@ import (
 
 type ConfigOption func() string
 
-var defaultPath = "config/config.yaml"
+var defaultPath = "D:\\workspace\\me\\going-layout\\config\\confiy.yaml"
 
 // 加载配置
 func Load(ops ...ConfigOption) *viper.Viper {
 	mergedConfig := viper.New()
+
+	if len(ops) == 0 {
+		ops = append(ops, func() string {
+			return defaultPath
+		})
+	}
 
 	for _, op := range ops {
 		config := loadConfig(op)

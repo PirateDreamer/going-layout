@@ -8,7 +8,7 @@ import (
 )
 
 func UserDomain() fx.Option {
-	return fx.Options(
+	return fx.Module("user-domain",
 		fx.Provide(repo.NewUserRepo),
 		fx.Provide(service.NewUserService),
 	)
