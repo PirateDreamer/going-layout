@@ -16,6 +16,9 @@ go get -u -v github.com/swaggo/files
 go get -u -v github.com/alecthomas/template
 ```
 
-# 依赖注入 fx
+# 依赖注入 wire
 
 # 结构体转化copier
+
+# 定时任务
+

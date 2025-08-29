@@ -8,8 +8,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func UserRouter(userRest *UserRest) {
-	g := ginc.R.Group("api/user")
+func UserRouter(r *gin.Engine, userRest *UserRest) {
+	g := r.Group("api/user")
 	g.GET("/user_info", ginc.Run(userRest.UserInfo))
 }
 

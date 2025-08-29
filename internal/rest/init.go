@@ -10,8 +10,8 @@ func Rest() fx.Option {
 	)
 }
 
-func Router() fx.Option {
-	return fx.Options(
-		fx.Invoke(UserRouter),
-	)
-}
+// func Router() fx.Option {
+// 	return fx.Options(
+// 		fx.Invoke(UserRouter),
+// 	)
+// }

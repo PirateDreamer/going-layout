@@ -7,7 +7,7 @@ import (
 )
 
 func Domain() fx.Option {
-	return fx.Options(
+	return fx.Module("domain",
 		user.UserDomain(),
 	)
 }

@@ -1,4 +1,4 @@
-package ginc
+package ioc
 
 import "go.uber.org/fx"
 
